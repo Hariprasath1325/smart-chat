@@ -1,0 +1,90 @@
+/* Page background */
+body {
+  background-color: #e5ddd5; /* WhatsApp light background */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Chat container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  padding: 14px;
+  overflow-y: auto;
+  background-color: #efeae2;
+  border-radius: 10px;
+}
+
+/* Message bubble */
+.message {
+  max-width: 65%;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sent message */
+.message.sent {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+  border-bottom-right-radius: 0;
+}
+
+/* Received message */
+.message.received {
+  align-self: flex-start;
+  background-color: #ffffff;
+  border-bottom-left-radius: 0;
+}
+
+/* Message text */
+.message-text {
+  margin-bottom: 4px;
+}
+
+/* Tick container (separate line) */
+.tick-container {
+  font-size: 12px;
+  align-self: flex-end;
+  color: gray;
+}
+
+/* Blue tick */
+.tick-container.seen {
+  color: #34b7f1;
+}
+
+/* Input area */
+.input-container {
+  display: flex;
+  margin-top: 12px;
+  gap: 12px;
+}
+
+.input-box {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Send button */
+.send-button {
+  background-color: #25d366;
+  border: none;
+  color: white;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.send-button:hover {
+  background-color: #1ebc57;
+}
