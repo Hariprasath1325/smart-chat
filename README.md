@@ -7,7 +7,7 @@ The application supports secure user authentication and real-time messaging usin
 
 ### Backend
 - Java
-- Spring Boot
+- Spring Boot 
 - Spring WebSocket
 - MySQL
 - REST APIs
